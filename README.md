@@ -2,13 +2,32 @@
 
 # IronBeers Project
 
+## Solution
+
+```sh
+npx create-react-app . # In the folder "lab-react-ironbeers"
+yarn add axios react-router-dom # Same as: npm i axios react-router-dom
+yarn start # To start the project
+```
+
+Initialise the routing system
+
+
+```js
+// src/index.js
+import {BrowserRouter} from 'react-router-dom'
+
+ReactDOM.render(<BrowserRouter><App /></BrowserRouter>, document.getElementById('root'));
+```
+
+ 
+## Introduction
+
 Since beers is one of the most demanded drinks between Ironhackers, we will create an app to display some of the best handcrafted beers. We will have something like the this:
 
 <div style="display: flex; justify-content: center">
 <img src="https://user-images.githubusercontent.com/23629340/45887951-2ca0bb80-bdbd-11e8-91a4-08b66d88a7c7.gif" />
 </div>
- 
-## Introduction
 
 For this project, we will be using an API so that we can retrieve the data of the beers. The root of the API is: `https://ironbeer-api.herokuapp.com/beers`, and the available endpoints are the following:
 
